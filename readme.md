@@ -65,3 +65,38 @@ Otimizando assim minhas possibilidades no CSS, preenchi diversas lacunas em meu 
     content: " ]";
 }
 ```
+- Sobre responsividade aprendi muito em como utilizar a mesma de forma eficaz,
+- como se comporta o CSS em questão de Vw e Vh e utilizando margin para centralizar.
+
+```sh
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .video, .mapa-conteudo{
+        width: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+        text-align: center;
+    }
+
+    .lista-beneficios, .imagem-beneficios{
+        width: 100%;
+    }
+
+    .produtos{
+        width: auto;
+    }
+
+    .produtos li{
+        display: flex;
+        flex-direction: column;  
+        min-width: 300px;
+        margin: 10px auto;
+    }
+}
+}
+```
