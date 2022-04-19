@@ -1,3 +1,4 @@
+/* Header */
 body{
     font-family: 'Roboto', sans-serif;  
 }
@@ -36,6 +37,8 @@ nav a:hover{
     text-decoration: underline;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+/*Produtos */
 
 .produtos{
     width: 940px;
@@ -82,6 +85,8 @@ nav a:hover{
     font-size: 18px;
 }
 
+/* footer */
+
 footer{
     text-align: center;
     background: url("bg.jpg");
@@ -94,12 +99,10 @@ footer{
     margin-top: 20px;
 }
 
-main{
-    
-}
+ /*Contato */
 
 form{
-    margin: 40px 0;    
+    margin: 40px;  
 }
 
 form label, form legend{
@@ -148,7 +151,7 @@ form label, form legend{
 }
 
 table{
-    margin: 20px 0 40px;
+    margin: 20px 40px;
 }
 
 thead{
@@ -160,7 +163,9 @@ thead{
 td, th{
     border: 1px solid #000000;
     padding: 8px 15px ;
-}
+} 
+
+/* Index */
 
 .banner{
     width: 100%;        
@@ -237,9 +242,12 @@ p::first-line{
 
 .mapa{
     padding: 3em 0;
-    background: linear-gradient(#FEFEFE,#888888) ;
+    background: linear-gradient(#FEFEFE,#888888) ;    
+}
 
-    
+.mapa-conteudo {
+	width: 940px;
+	margin: 0 auto;
 }
 
 .mapa p{
@@ -261,6 +269,35 @@ p::first-line{
 
 .video {
     width: 560px;
-    margin: 0 auto;
-    padding: 2em;
+    margin: 2em auto;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .video, .mapa-conteudo{
+        width: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+        text-align: center;
+    }
+
+    .lista-beneficios, .imagem-beneficios{
+        width: 100%;
+    }
+
+    .produtos{
+        width: auto;
+    }
+
+    .produtos li{
+        display: flex;
+        flex-direction: column;  
+        min-width: 300px;
+        margin: 10px auto;
+    }
 }
